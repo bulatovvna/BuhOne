@@ -1,0 +1,713 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 118px;
+}
+
+.content {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+/* header start */
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px; 
+}
+
+.logo {
+    padding-right: 120px;
+}
+
+.header_menu > a {
+    color: #222222;
+    text-decoration: none;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.burger_menu {
+    display: none;
+}
+
+@media(max-width: 754px){
+    .content {
+        max-width: 592px;
+    }
+    .header_menu > a {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+    }
+}
+
+/* header end */
+
+/* section buch_services start */
+
+.buch_services {
+    max-width: 100%;
+    height: 670px;
+    position: relative;
+}
+
+.buch_img > img {
+    width: 1920px;
+    height: 670px;
+}
+
+.buch_services > .content {
+    position: absolute;
+    top: 162px;
+    left: 423px;
+}
+
+h1 {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66.37px;
+    color: #fff;
+
+    width: 589px;
+    margin-bottom: 80px;
+}
+
+.our_presentation {
+    width: 270px;
+    height: 60px;
+    border: none;
+    margin-bottom: 120px;
+
+    background-color: rgb(0, 68, 255);
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.slider_control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider_round {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.round {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    background: gray;
+}
+
+.slider_quadrat {
+    position: absolute;
+    right: -614px;
+    top: 353px;
+}
+
+.quadrat {
+    width: 60px;
+    height: 60px;
+    opacity: 30%;
+}
+
+.active {
+    background: #fff;
+}
+
+@media(max-width: 754px) {
+    .buch_img > img {
+        width: 754px;
+        height: 670px;
+        object-fit: cover;
+    }
+
+    .buch_services_content {
+        margin-left: -340px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .slider_quadrat {
+        right: 15px;
+    }
+}
+
+/* section buch_services end */
+
+/* section specialisation start */
+
+.specialisation {
+    height: 1242px;
+    background-color: #ebebeb;
+}
+
+.specialisation > .content {
+    padding-top: 140px;
+}
+
+.our_service {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 24x;
+    color: #bdbdbd;
+    padding-bottom: 40px;
+}
+
+.our_special {
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    color: #333;
+    padding-bottom: 102px;
+}
+
+.main_buch_services {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+}
+
+.main_buch_service {
+    height: 360px;
+    background-image: url(./images/bg-main-buch-serv.png);
+
+}
+
+.main_buch_service > p {
+    width: 187px;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 261px;
+    padding-left: 45px;
+}
+
+.main_buch_service:hover {
+    background: linear-gradient(0deg, 
+    rgba(0, 95, 163, 0.65), 
+    rgba(0, 95, 163, 0.65)), 
+    url(./images/bg-main-buch-serv.png);
+}
+
+@media(max-width: 754px) {
+    .specialisation {
+        height: 2911px;
+    }
+
+    .our_service {
+        padding-bottom: 17px;
+    }
+
+    .our_special {
+        width: 522px;
+    }
+
+    .main_buch_services {
+        grid-template-columns: repeat(1, 592px);
+    }
+}
+
+/* section specialisation end */
+
+/* section about_us start */
+
+.about_us > .content {
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.main_div_about_us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us_h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
+    color: #bdbdbd;
+    margin-bottom: 40px;
+}
+
+.name_of_company {
+    width: 347px;
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.text_blue {
+    color: #005FA3;
+}
+
+.info_company {
+    width: 445px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+.deals {
+    display: grid;
+    grid-template-columns: repeat(2,255px);
+    gap: 30px;
+}
+
+.deal {
+    height: 255px;
+    background-color: #ebebeb;
+}
+
+.deal:hover {
+    background-color: #005FA3;
+    color: #fff;
+}
+
+.deal:hover .all_cases {
+    color: #fff;
+}
+
+.deal_content {
+    margin: 30px 40px 40px;
+}
+
+.count_of_deal {
+    font-family: 'Lato';
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 66px;
+}
+
+.big_deal {
+    width: 142px;
+    height: 37px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.all_cases {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #005FA3;
+}
+
+@media(max-width: 754px){
+    .main_div_about_us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deals {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 562px);
+    }
+
+    .deal {
+        height: 120px;
+    }
+
+    .deal_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .count_of_deal {
+        padding-bottom: 33px;
+    }
+
+    .big_deal {
+        width: 128px;
+        padding-bottom: 86px;
+    }
+
+    .all_cases {
+        padding-bottom: 7px;
+    }
+}
+/* section about_us end */
+
+/* section our clients start */
+
+.our_clients {
+    background-color: #ebebeb;
+    height: 630px;
+}
+
+.our_clients > .content {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.our_clients_h3 {
+    padding-bottom: 40px;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
+    color: #bdbdbd;
+}
+
+.with_us_works {
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    padding-bottom: 80px;
+    color: #333;
+}
+
+.brands {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.img_brand {
+    width: 255px;
+    height: 130px;
+    background-image: url(./images/microsoft.png);
+}
+
+.quadrat_2 {
+    background-color: #005FA3;
+    opacity: 20%;
+    border: none;
+    color: #fff;
+}
+
+.quadrat_2:hover {
+    opacity: 80%;
+}
+
+@media(max-width: 754px) {
+    /* .brands:not(:nth-child(1)) {
+        display: none;
+    } */
+
+    .with_us_works {
+        width: 483px;
+        padding-bottom: 32px;
+    }
+
+    .imgNone {
+        display: none;
+    }
+
+    .img_brand {
+        width: 483px;
+        height: 196px;
+        padding-left: 20px;
+    }
+}
+
+/* section our clients end */
+
+/* section feedback start */
+
+.feedback_main {
+    margin: 140px 0;
+}
+
+.reviews {
+    width: 350px;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
+    color: #bdbdbd;
+    padding: 0 0 40px 0;
+}
+
+.your_gratitude {
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    color: #333;
+    padding-bottom: 80px;
+}
+
+.client_feedback {
+    height: 320px;
+    background-color: #ebebeb;
+    margin-bottom: 100px;
+}
+
+.comment {
+    width: 920px;
+    height: 92px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 45px 95px 0;
+}
+
+.client {
+    padding: 100px 0 0 95px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.ava_client {
+    width: 80px;
+    height: 80px;
+    background-image: url(./images/ava.png);
+}
+
+.name_client {
+    width: 225px;
+    padding-bottom: 10px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.post_client {
+    width: 225px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #4f4f4f;
+}
+
+.slider_quadrat3 {
+    position: static;
+}
+
+.quadrat3 {
+    width: 60px;
+    height: 60px;
+    /* position: static; */
+    background-color: #005FA3;
+    opacity: 20%;
+    border: none;
+    color: #fff;
+}
+
+.quadrat3:hover {
+    opacity: 80%;
+}
+
+@media(max-width: 754px) {
+    .comment {
+        width: 585px;
+        padding: 47px 125px 47px 70px;
+    }
+
+    .client {
+        display: none;
+    }
+}
+
+/* section feedback end */
+
+/* section connect with us start */
+
+.connect_with_us {
+    position: relative;
+}
+
+.connect_with_us > .content {
+    position: absolute;
+    top: 122px;
+    left: 407px;
+    display: flex;
+    gap: 123px;
+}
+
+.connect_with_us_h2 {
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.questions {
+    width: 445px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.data_company {
+    display: flex;
+    gap: 40px;
+}
+
+.form_clients_info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.number > img {
+    width: 17px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.p_number {
+    width: 184px;
+    font-family: Lato;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #fff;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.email > img {
+    width: 40px;
+    height: 30px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.p_email {
+    width: 155px;
+    font-family: Lato;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #fff;
+}
+
+.data_clients {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.form_name, .form_surname, .form_message {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label_name, .label_surname, .label_message {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+}
+
+.input_name, .input_surname, .input_message {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+}
+
+.form_message {
+    width: 540px;
+}
+
+.input_message {
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.send {
+    width: 270px;
+    height: 60px;
+    background-color: #005FA3;
+    border: none;
+    color: #fff;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media(max-width: 754px) {
+    .connect_with_us > .content {
+        flex-direction: column;
+        top: 29px;
+        left: 78px;
+    }
+
+    .connect_with_us > .buch_img > img {
+        height: 890px;
+    }
+}
+
+/* section connect with us end */
+
+/* footet start */
+
+.footer_info {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info > p {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+/* footer end */
