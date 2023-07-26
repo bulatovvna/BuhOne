@@ -75,7 +75,7 @@
 .buch_services > .content {
     position: absolute;
     top: 162px;
-    left: 423px;
+    left: 110px;
 }
 
 h1 {
@@ -555,7 +555,7 @@ h1 {
 .connect_with_us > .content {
     position: absolute;
     top: 122px;
-    left: 407px;
+    left: 110px;
     display: flex;
     gap: 123px;
 }
